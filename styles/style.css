@@ -144,3 +144,93 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip-path: inset(100%);
   clip: rect(0 0 0);
   overflow: hidden; }
+
+html {
+  font-size: 62.5%; }
+
+.wrapper {
+  max-width: 1280px;
+  width: 80%;
+  margin: 0 auto; }
+
+.navHeader__list {
+  background: #f6a823;
+  font-size: 20px;
+  font-size: 2rem;
+  font-family: 'Roboto';
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2c2c2c;
+  letter-spacing: 1px;
+  line-height: 29px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none; }
+  .navHeader__list .navHeader__item__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px;
+    color: #2c2c2c; }
+  .navHeader__list .navHeader__Sophie {
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-family: 'Roboto';
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2c2c2c;
+    letter-spacing: 1px;
+    line-height: 29px;
+    font-family: "Lora"; }
+
+.mainHeader {
+  background: #f6a823;
+  margin: 0 auto;
+  height: 80vh; }
+
+.title {
+  margin: 0;
+  font-size: 80px;
+  font-size: 8rem;
+  font-family: 'Lora';
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2c2c2c;
+  line-height: 92px; }
+
+.about {
+  background: #f0efed; }
+
+.whoIs {
+  font-size: 42px;
+  font-size: 4.2rem;
+  font-family: 'Roboto';
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2c2c2c;
+  letter-spacing: 1px;
+  line-height: 29px; }
+
+.whoIs__content {
+  font-size: 20px;
+  font-size: 2rem;
+  font-family: 'Roboto';
+  color: #2c2c2c;
+  line-height: 32px; }
+
+.findOutMore {
+  width: 115px;
+  color: #05afc1;
+  font-size: 18px; }
+
+.findOutMore__button {
+  text-decoration: none; }

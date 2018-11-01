@@ -5,40 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sophie | Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora:700|Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+<!--MAIN HEADER-->
+    <nav class="navHeader">
+        <ul class="navHeader__list">
+            <li class="navHeader__item"><a class="navHeader__item__link" href="#">Home</a></li>
+            <li class="navHeader__item"><a class="navHeader__item__link" href="#">About</a></li>
+            <li class="navHeader__item navHeader__Sophie"><a class="navHeader__item__link" href="#">Sophie</a></li>
+            <li class="navHeader__item"><a class="navHeader__item__link" href="#">Blog</a></li>
+            <li class="navHeader__item"><a class="navHeader__item__link" href="#">Contact</a></li>
+        </ul>
+    </nav>
     <header class="mainHeader">
-        <nav class="navHeader">
-            <ul class="navHeader__list">
-                <li class="navHeader__link"><a href="#">Home</a></li>
-                <li class="navHeader__link"><a href="#">About</a></li>
-                <li class="navHeader__link navHeader__Sophie"><a href="#">Sophie</a></li>
-                <li class="navHeader__link"><a href="#">Blog</a></li>
-                <li class="navHeader__link"><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-
-        <h1>Sophie</h1>
-    </header>
-
-    <main>
-
         <div class="wrapper">
+            <h1 class="title">Sophie</h1>
+            <!-- <img src="./assets/home-image-1.jpg" alt=""> -->
+        </div>
+    </header>
+<!-- MAIN HEADER ENDS -->
+<!-- MAIN SECTION STARTS -->
+    <main>
+        <div class="about wrapper">
+<!-- MAIN ABOUT SECTION -->
             <div class="mainAbout">
-                <h2>Who Is Sophie?</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eligendi atque cum voluptatem optio id, delectus itaque laboriosam repellendus quis dolores autem reprehenderit fugiat eos eum, hic iste culpa illo sit voluptatum, placeat iure! Architecto aliquam soluta laudantium obcaecati officia sequi illum eligendi omnis iure, perspiciatis ipsam nulla laborum necessitatibus amet corporis.</p>
+                <h2 class="whoIs">Who Is Sophie?</h2>
+                <p class="whoIs__content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eligendi atque cum voluptatem optio id, delectus itaque laboriosam repellendus quis dolores autem reprehenderit fugiat eos eum, hic iste culpa illo sit voluptatum, placeat iure! Architecto aliquam soluta laudantium obcaecati officia sequi illum eligendi omnis iure, perspiciatis ipsam nulla laborum necessitatibus amet corporis.</p>
                 <div class="findOutMore">
-                    <a class="findOutMore__button" href="Find Out More"></a>
+                    <a class="findOutMore__button" href="Find Out More">Find Out More</a>
                 </div>
             </div>
         </div>
+<!-- MAIN ABOUT SECTION ENDS -->
+<!-- MAIN BLOG SECTION -->
+        <section class="mainBlog wrapper">
+            <div class="blog--blogTop">
+                <div class="blog__img blog__img--blogTop"></div>
+                <div class="blog__content blog__content--blogTop"></div>
+            </div>
 
-
-
-
+            <div class="blog--blogBottom">
+                <div class="blog__content blog__content--blogBottom"></div>
+                <div class="blog__img blog__img--blogBottom"></div>
+            </div>
+        </section>
+<!-- MAIN BLOG SECTION ENDS -->
+<!-- MAIN NAV SECTION -->
+        <section class="mainNav">
+            <div class="wrapper mainNav__wrapper">
+                <div class="mainNav__wrapper__photos">
+                    <div class="mainNavv__icon"></div>
+                    <div class="mainNav__content"></div>
+                </div>
+                <div class="mainNav__wrapper__about">
+                    <div class="mainNavv__icon"></div>
+                    <div class="mainNav__content"></div>
+                </div>
+                <div class="mainNav__wrapper__blog">
+                    <div class="mainNavv__icon"></div>
+                    <div class="mainNav__content"></div>
+                </div>
+                <div class="mainNav__wrapper__getInTouch">
+                    <div class="mainNavv__icon"></div>
+                    <div class="mainNav__content"></div>
+                </div>
+            </div>
+        </section>
+<!-- MAIN NAV SECTION ENDS -->
 
     </main>
+
     
 </body>
 </html>

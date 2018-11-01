@@ -1,0 +1,35 @@
+
+.navHeader__list{
+    background: $primaryColor;
+    @include fontSize(20);
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    .navHeader__item__link{
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 10px;
+        color: $fontAccentColor;
+    }
+    .navHeader__Sophie{
+        @include fontSize(24);
+        font-family: $accentFont;
+    }
+}
+
+.mainHeader{
+    background: $primaryColor;
+    margin: 0 auto;
+    height: 80vh;
+}
+
+.title{
+    margin: 0;
+    @include fontSizeTwo(80);
+}
+
+

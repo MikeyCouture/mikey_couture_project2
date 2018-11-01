@@ -1,0 +1,23 @@
+
+// ABOUT SECTION
+.about{
+    background: $secondaryColor;
+}
+
+.whoIs{
+    @include fontSize(42);
+}
+
+.whoIs__content{
+        @include pText(20);
+    }
+
+.findOutMore{
+    @include buttonWidth(115px);
+}
+
+.findOutMore__button{
+    text-decoration: none;
+}
+
+// BLOG SECTION

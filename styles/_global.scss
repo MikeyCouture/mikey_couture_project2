@@ -1,5 +1,54 @@
 // GLOBAL STYLING FOR PORJECT TWO 
-// Variables
+html{
+    font-size: 62.5%;
+}
+
+.wrapper{
+    max-width: 1280px;
+    width: 80%;
+    margin: 0 auto;
+}
+
 $primaryColor: #f6a823;
 $secondaryColor: #f0efed;
+$accentColor: #05afc1;
+$fontAccentColor: #2c2c2c;
+$mainFont: 'Roboto';
+$accentFont: 'Lora';
 
+
+@mixin fontSize($sizeValue){
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+    font-family: 'Roboto';
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $fontAccentColor;
+    letter-spacing: 1px;
+    line-height: 29px;
+}
+
+@mixin fontSizeTwo($sizeValue) {
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+    font-family: 'Lora';
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $fontAccentColor;
+    line-height: 92px;
+}
+
+@mixin pText($sizeValue){
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+    font-family: 'Roboto';
+    color: $fontAccentColor;
+    line-height: 32px;
+}
+
+@mixin buttonWidth ($width){
+    width: $width;
+    color: $accentColor;
+    font-size: 18px;
+
+}
