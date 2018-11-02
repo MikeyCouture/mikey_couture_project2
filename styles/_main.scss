@@ -2,10 +2,14 @@
 // ABOUT SECTION
 .about{
     background: $secondaryColor;
+    .mainAbout{
+        padding: 100px 0;
+    }
 }
 
 .whoIs{
     @include fontSize(42);
+    margin: 0;
 }
 
 .whoIs__content{
@@ -14,10 +18,95 @@
 
 .findOutMore{
     @include buttonWidth(115px);
+    .findOutMore__button{
+    text-decoration: none;
+    }
 }
 
-.findOutMore__button{
-    text-decoration: none;
-}
 
 // BLOG SECTION
+
+.blog--blogTop,
+.blog--blogBottom{
+    width: 100%;
+    display: flex;
+}
+
+.blog__img,
+.blog__content{
+    width: 50%;
+}
+
+.blog__img--blogTop{
+    background: url("../assets/home-image-2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 330px;
+    background-repeat: no-repeat;
+}
+
+.blog__img--blogBottom{
+    background: url("../assets/home-image-3.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 330px;
+    background-repeat: no-repeat;
+
+}
+
+.blog__content--title{
+    @include fontSize(32);
+    line-height: none;
+}
+
+.blog__content--text{
+    @include pText(20);
+}
+
+
+// MAIN NAV SECTION
+
+.mainNav{
+    background: $secondaryColor;
+    
+}
+
+.mainNav__wrapper{
+    display: flex;
+}
+
+// IMAGE BANNER
+.image-Banner{
+    background: url("../assets/home-image-4.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 410px;
+    background-repeat: no-repeat;
+}
+
+.blog__img--blogTop,
+.blog__img--blogBottom{
+    position: relative;
+    bottom: 30px;
+    box-shadow: 20px 20px $shadowColor, -134px 20px $shadowColor;
+}
+
+.blog__img--blogBottom{
+    top: 30px;
+    box-shadow: 20px 20px $shadowColor, 134px 20px $shadowColor;
+}
+
+.blog__content--blogTop{
+    padding: 70px 0 0 70px;
+}
+
+.blog__content--blogBottom{
+    padding: 0px 60px 0 0px;
+    text-align: end;
+
+}
+
+
+
+
+

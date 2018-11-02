@@ -209,6 +209,8 @@ html {
 
 .about {
   background: #f0efed; }
+  .about .mainAbout {
+    padding: 100px 0; }
 
 .whoIs {
   font-size: 42px;
@@ -218,7 +220,8 @@ html {
   text-transform: uppercase;
   color: #2c2c2c;
   letter-spacing: 1px;
-  line-height: 29px; }
+  line-height: 29px;
+  margin: 0; }
 
 .whoIs__content {
   font-size: 20px;
@@ -231,6 +234,82 @@ html {
   width: 115px;
   color: #05afc1;
   font-size: 18px; }
+  .findOutMore .findOutMore__button {
+    text-decoration: none; }
 
-.findOutMore__button {
-  text-decoration: none; }
+.blog--blogTop,
+.blog--blogBottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.blog__img,
+.blog__content {
+  width: 50%; }
+
+.blog__img--blogTop {
+  background: url("../assets/home-image-2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 330px;
+  background-repeat: no-repeat; }
+
+.blog__img--blogBottom {
+  background: url("../assets/home-image-3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 330px;
+  background-repeat: no-repeat; }
+
+.blog__content--title {
+  font-size: 32px;
+  font-size: 3.2rem;
+  font-family: 'Roboto';
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2c2c2c;
+  letter-spacing: 1px;
+  line-height: 29px;
+  line-height: none; }
+
+.blog__content--text {
+  font-size: 20px;
+  font-size: 2rem;
+  font-family: 'Roboto';
+  color: #2c2c2c;
+  line-height: 32px; }
+
+.mainNav {
+  background: #f0efed; }
+
+.mainNav__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.image-Banner {
+  background: url("../assets/home-image-4.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 410px;
+  background-repeat: no-repeat; }
+
+.blog__img--blogTop,
+.blog__img--blogBottom {
+  position: relative;
+  bottom: 30px;
+  -webkit-box-shadow: 20px 20px #a82706, -134px 20px #a82706;
+  box-shadow: 20px 20px #a82706, -134px 20px #a82706; }
+
+.blog__img--blogBottom {
+  top: 30px;
+  -webkit-box-shadow: 20px 20px #a82706, 134px 20px #a82706;
+  box-shadow: 20px 20px #a82706, 134px 20px #a82706; }
+
+.blog__content--blogTop {
+  padding: 70px 0 0 70px; }
+
+.blog__content--blogBottom {
+  padding: 0px 60px 0 0px;
+  text-align: end; }
