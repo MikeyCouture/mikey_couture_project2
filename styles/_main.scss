@@ -7,12 +7,12 @@
     }
 }
 
-.whoIs{
+.sophie-title{
     @include fontSize(42);
     margin: 0;
 }
 
-.whoIs__content{
+.sophie-content{
         @include pText(20);
     }
 
@@ -22,6 +22,7 @@
     text-decoration: none;
     }
 }
+// ABOUT SECTION ENDS
 
 
 // BLOG SECTION
@@ -62,25 +63,54 @@
 .blog__content--text{
     @include pText(20);
 }
+// BLOG SECTION ENDS
 
 
 // MAIN NAV SECTION
 
 .mainNav{
     background: $secondaryColor;
+    padding: 150px 0 100px 0;
     
 }
 
 .mainNav__wrapper{
     display: flex;
+    &--content{
+        display: flex;
+    }
 }
+
+.mainNav__content{
+    padding: 0 0 0 20px;
+}
+
+.mainNav__title{
+    @include fontSize(32);
+    line-height: none;
+    margin: 0;
+}
+
+.mainNav__text{
+    @include pText(20);
+}
+
+.fas{
+    background: orange;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 14px;
+}
+
+
+// MAIN NAV ENDS
 
 // IMAGE BANNER
 .image-Banner{
     background: url("../assets/home-image-4.jpg");
     background-size: cover;
     background-position: center;
-    height: 410px;
+    height: 400px;
     background-repeat: no-repeat;
 }
 
@@ -105,7 +135,34 @@
     text-align: end;
 
 }
+// IMAGE BANNER ENDS
 
+// JOURNEY SECTION
+.journey{
+    background: $secondaryColor;
+    padding: 100px 0;
+}
+
+
+.journey-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.journey__img{
+    background: url("../assets/home-image-5.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 304px;
+    width: 304px;
+    background-repeat: no-repeat;
+    box-shadow: 20px 20px $shadowColor;
+}
+
+.journey__content{
+    width: 70%;
+    padding: 0 0 0 50px;
+}
 
 
 

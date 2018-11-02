@@ -21,16 +21,43 @@
     }
 }
 
-.mainHeader{
+.main-Header{
     background: $primaryColor;
     margin: 0 auto;
-    height: 80vh;
+    height: 600px;
+}
+
+.header__wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 90px;
 }
 
 .title{
     margin: 0;
-    @include fontSizeTwo(80);
+    @include fontSizeTwo(120);
+    padding-bottom: 70px;
+    &::before{
+        background: url("../assets/circle-text.png");
+        height: 130px;
+        width: 214px;
+        background-repeat: no-repeat;
+        background-position: center;
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 270px;
+        left: 115px;
+    }
 }
+
+.main-Header__img{
+    box-shadow: 20px 20px white;
+    width: 400px;
+}
+
+
 
 
 
