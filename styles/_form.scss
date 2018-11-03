@@ -1,6 +1,6 @@
 
 .myForm{
-    margin: 0 0 0 20px;
+    margin: 0 0 0 40px;
     &--topForm{
         display: flex;
     }
@@ -34,4 +34,5 @@
 
 button{
     @extend .find-Out-More__button;
+    margin-bottom: 100px;
 }

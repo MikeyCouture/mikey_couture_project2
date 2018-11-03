@@ -438,6 +438,31 @@ img {
     font-size: 14px;
     padding: 7px 0; }
 
+.main-Blog__Header {
+  background: url("../assets/blog-image-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  position: relative; }
+  .main-Blog__Header--title {
+    position: absolute;
+    font-size: 80px;
+    font-size: 8rem;
+    font-family: 'Lora';
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2c2c2c;
+    line-height: 92px;
+    margin: -40px 120px; }
+
 .main-Blog-Container {
   background: #f0efed;
   padding-top: 100px; }
@@ -494,11 +519,11 @@ img {
   width: 75%; }
 
 .main-Blog__article {
-  margin: 0 0 20px 20px;
+  margin: 0 0 20px 40px;
   padding: 50px;
   border-bottom: 5px solid #f6a823; }
   .main-Blog__article--content {
-    margin: 0 0 0 20px; }
+    margin: 0 0 0 40px; }
 
 .main-Blog__text {
   margin-top: 0; }
@@ -507,7 +532,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 0 20px 20px;
+  margin: 0 0 20px 40px;
   padding: 50px; }
   .main-Blog__article--archive:nth-child(3) {
     border-bottom: 5px solid #f6a823; }
@@ -517,7 +542,7 @@ img {
   height: 80px; }
 
 .myForm {
-  margin: 0 0 0 20px; }
+  margin: 0 0 0 40px; }
   .myForm--topForm {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -555,3 +580,45 @@ img {
 
 .myInput--name {
   margin-right: 10px; }
+
+button {
+  margin-bottom: 100px; }
+
+.contact__Header {
+  background: url("../assets/blog-image-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  position: relative; }
+  .contact__Header--title {
+    position: absolute;
+    font-size: 80px;
+    font-size: 8rem;
+    font-family: 'Lora';
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2c2c2c;
+    line-height: 92px;
+    margin: -40px 120px; }
+
+.main-Contact-Container {
+  background: #f0efed; }
+
+.main-Contact__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.aside--contact {
+  width: 25%; }
+
+.contact-Form {
+  width: 75%; }

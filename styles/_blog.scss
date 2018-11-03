@@ -1,3 +1,19 @@
+.main-Blog__Header{
+    background: url("../assets/blog-image-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    &--title{
+        position: absolute;
+        @include fontSizeTwo(80);
+        margin: -40px 120px;
+    }
+}
 
 .main-Blog-Container{
     background: $secondaryColor;
@@ -53,11 +69,11 @@
 }
 
 .main-Blog__article{
-    margin: 0 0 20px 20px;
+    margin: 0 0 20px 40px;
     padding: 50px;
     border-bottom: 5px solid $primaryColor;
     &--content{
-        margin: 0 0 0 20px;
+        margin: 0 0 0 40px;
     }
 }
 
@@ -67,7 +83,7 @@
 
 .main-Blog__article--archive{
     display: flex;
-    margin: 0 0 20px 20px;
+    margin: 0 0 20px 40px;
     padding: 50px;
     &:nth-child(3){
         border-bottom: 5px solid #f6a823;
