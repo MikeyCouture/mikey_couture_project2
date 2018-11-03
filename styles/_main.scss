@@ -10,6 +10,10 @@
 .sophie-title{
     @include fontSize(42);
     margin: 0;
+    &--blog{
+        @include fontSize(32);
+        margin-top: 0;
+    }
 }
 
 .sophie-content{
@@ -118,11 +122,11 @@
 
 // IMAGE BANNER
 .image-Banner{
-    background: url("../assets/home-image-4.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    background-repeat: no-repeat;
+    // background: url("../assets/home-image-4.jpg");
+    // background-size: cover;
+    // background-position: center;
+    // height: 400px;
+    // background-repeat: no-repeat;
 }
 
 .blog__img--blogTop,
