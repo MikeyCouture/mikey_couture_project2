@@ -14,13 +14,18 @@
 
 .sophie-content{
         @include pText(20);
+        margin: 30px 0;
     }
 
-.findOutMore{
-    @include buttonWidth(115px);
-    .findOutMore__button{
+.find-Out-More__button{
+    // width: $width;
+    color: $fontAccentColor;
+    background: $accentColor;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
     text-decoration: none;
-    }
 }
 // ABOUT SECTION ENDS
 
@@ -32,6 +37,8 @@
     width: 100%;
     display: flex;
 }
+
+
 
 .blog__img,
 .blog__content{
@@ -62,6 +69,10 @@
 
 .blog__content--text{
     @include pText(20);
+}
+
+.read-More-Button{
+    @extend .find-Out-More__button;
 }
 // BLOG SECTION ENDS
 
@@ -118,16 +129,16 @@
 .blog__img--blogBottom{
     position: relative;
     bottom: 30px;
-    box-shadow: 20px 20px $shadowColor, -134px 20px $shadowColor;
+    box-shadow: 20px 20px $shadowColor, -145px 20px $shadowColor;
 }
 
 .blog__img--blogBottom{
     top: 30px;
-    box-shadow: 20px 20px $shadowColor, 134px 20px $shadowColor;
+    box-shadow: 20px 20px $primaryColor, 145px 20px $primaryColor;
 }
 
 .blog__content--blogTop{
-    padding: 70px 0 0 70px;
+    padding: 50px 0 0 70px;
 }
 
 .blog__content--blogBottom{
@@ -156,12 +167,12 @@
     height: 304px;
     width: 304px;
     background-repeat: no-repeat;
-    box-shadow: 20px 20px $shadowColor;
+    box-shadow: 20px 20px $primaryColor;
 }
 
 .journey__content{
     width: 70%;
-    padding: 0 0 0 50px;
+    padding: 10px 0 0 50px;
 }
 // JOURNEY SECTION ENDS
 

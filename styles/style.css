@@ -153,6 +153,9 @@ html {
   width: 80%;
   margin: 0 auto; }
 
+img {
+  display: block; }
+
 .navHeader__list {
   background: #f6a823;
   font-size: 20px;
@@ -256,14 +259,17 @@ html {
   font-size: 2rem;
   font-family: 'Roboto';
   color: #2c2c2c;
-  line-height: 32px; }
+  line-height: 32px;
+  margin: 30px 0; }
 
-.findOutMore {
-  width: 115px;
-  color: #05afc1;
-  font-size: 18px; }
-  .findOutMore .findOutMore__button {
-    text-decoration: none; }
+.find-Out-More__button, .read-More-Button {
+  color: #2c2c2c;
+  background: #05afc1;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none; }
 
 .blog--blogTop,
 .blog--blogBottom {
@@ -360,16 +366,16 @@ html {
 .blog__img--blogBottom {
   position: relative;
   bottom: 30px;
-  -webkit-box-shadow: 20px 20px #a82706, -134px 20px #a82706;
-  box-shadow: 20px 20px #a82706, -134px 20px #a82706; }
+  -webkit-box-shadow: 20px 20px #a82706, -145px 20px #a82706;
+  box-shadow: 20px 20px #a82706, -145px 20px #a82706; }
 
 .blog__img--blogBottom {
   top: 30px;
-  -webkit-box-shadow: 20px 20px #a82706, 134px 20px #a82706;
-  box-shadow: 20px 20px #a82706, 134px 20px #a82706; }
+  -webkit-box-shadow: 20px 20px #f6a823, 145px 20px #f6a823;
+  box-shadow: 20px 20px #f6a823, 145px 20px #f6a823; }
 
 .blog__content--blogTop {
-  padding: 70px 0 0 70px; }
+  padding: 50px 0 0 70px; }
 
 .blog__content--blogBottom {
   padding: 0px 60px 0 0px;
@@ -395,12 +401,12 @@ html {
   height: 304px;
   width: 304px;
   background-repeat: no-repeat;
-  -webkit-box-shadow: 20px 20px #a82706;
-  box-shadow: 20px 20px #a82706; }
+  -webkit-box-shadow: 20px 20px #f6a823;
+  box-shadow: 20px 20px #f6a823; }
 
 .journey__content {
   width: 70%;
-  padding: 0 0 0 50px; }
+  padding: 10px 0 0 50px; }
 
 .gallery__wrapper--container {
   width: 100%;
