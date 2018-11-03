@@ -36,19 +36,20 @@
 
 .title{
     margin: 0;
-    @include fontSizeTwo(120);
     padding-bottom: 70px;
+    position: relative;
+    @include fontSizeTwo(120);
     &::before{
         background: url("../assets/circle-text.png");
         height: 130px;
         width: 214px;
         background-repeat: no-repeat;
-        background-position: center;
+        // background-position: center;
         content: "";
-        display: inline-block;
+        display: block;
         position: absolute;
-        top: 270px;
-        left: 115px;
+        bottom: 100px;
+        left: -70px;
     }
 }
 

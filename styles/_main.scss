@@ -163,6 +163,24 @@
     width: 70%;
     padding: 0 0 0 50px;
 }
+// JOURNEY SECTION ENDS
+
+// GALLERY SECTION
+
+.gallery__wrapper--container{
+    width: 100%;
+    display: flex;
+    padding: 100px 0;
+    .gallery__wrapper__item:nth-child(2){
+        padding: 0 20px;
+    }
+    .gallery__image{
+    display: block;
+    width: 100%;
+    }
+}
+
+
 
 
 
