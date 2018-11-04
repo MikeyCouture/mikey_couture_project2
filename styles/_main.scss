@@ -255,12 +255,75 @@
     .gallery__wrapper--container{
         padding: 50px 0;
     }
+// GALLERY SECTION ENDS
+}
 
+@media (max-width: 995px){
+// BLOG SECTIONS
 
+    .blog--blogTop{
+        flex-direction: column;
+    }
+    .blog--blogBottom{
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
+
+    .blog__img, .blog__content{
+        width: 100%;
+    }
+
+    .blog__img--blogTop{
+        box-shadow: 100px 20px 40px #a82706, -145px 20px 40px #a82706;
+    }
+
+    .blog__img--blogBottom{
+        box-shadow: -100px 20px 40px #f6a823, 100px 20px 40px #f6a823;
+    }
+
+    .blog__content{
+    &--blogTop, &--blogBottom{
+        padding: 0;
+        text-align: center;
+        margin: 50px 0;
+        }   
+    }
+
+    .blog__content--blogBottom{
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 905px){
+// MAINNAV
+.mainNav{
+    padding: 80px 0 80px 0;
+}
+
+// JOURNEY SECTION 
+.journey-wrapper{
+    flex-direction: column;
+    .journey__img{
+        margin: 0 auto;
+        }
+    }
+    .journey__content{
+        text-align: center;
+        margin: 50px auto 0 auto;
+        width: auto;
+        padding: 0;
+    }
+
+// GALLERY SECTION
+
+    .gallery__wrapper__item:nth-child(3){
+        display: none;
+    }
 
 
 
 }
+
 
 
 
