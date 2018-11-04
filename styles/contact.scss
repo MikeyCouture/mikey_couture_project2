@@ -1,5 +1,5 @@
 .contact__Header{
-    background: url("../assets/blog-image-1.jpg");
+    background: url("../assets/contact-image-1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,6 +17,7 @@
 
 .main-Contact-Container{
     background: $secondaryColor;
+    padding-top: 100px;
 }
 
 .main-Contact__wrapper{
@@ -25,8 +26,36 @@
 
 .aside--contact{
     width: 25%;
+    background: white;
+    height: 300px;
+    width: 350px;
+    padding: 40px;
 }
 
 .contact-Form{
     width: 75%;
+}
+
+// CONTACT SOCIALS
+.aside--socials{
+    .fab{
+        font-size: 25px;
+        color: $primaryColor;
+        text-shadow: 1px 1px 5px #0000001a;
+        padding-right: 20px;
+    }
+}
+
+.aside{
+    &--infoEmail, &--location{
+        @include pText(18);
+    }
+    &--infoEmail{
+        font-weight: bold;
+    }
+}
+
+.aside--list{
+        list-style-type: none;
+        padding: 0;    
 }

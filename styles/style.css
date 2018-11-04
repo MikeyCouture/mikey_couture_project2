@@ -184,7 +184,15 @@ img {
     text-decoration: none;
     text-transform: uppercase;
     margin: 10px;
-    color: #2c2c2c; }
+    color: #2c2c2c;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+    .navHeader__list .navHeader__item__link:hover {
+      color: #f0efed; }
+    .navHeader__list .navHeader__item__link--active {
+      color: #f0efed;
+      border-bottom: 1px solid #05afc1; }
   .navHeader__list .navHeader__Sophie {
     font-size: 24px;
     font-size: 2.4rem;
@@ -466,6 +474,12 @@ img {
 .main-Blog-Container {
   background: #f0efed;
   padding-top: 100px; }
+  .main-Blog-Container a {
+    color: #285e64;
+    font-weight: bold;
+    text-decoration: none; }
+    .main-Blog-Container a:hover {
+      color: #378088; }
 
 .main-Blog-Wrapper {
   display: -webkit-box;
@@ -500,9 +514,16 @@ img {
     font-family: 'Roboto';
     color: #2c2c2c;
     line-height: 32px; }
+  .main-Blog__text--sophie-Date {
+    font-size: 20px;
+    font-size: 2rem;
+    font-family: 'Roboto';
+    color: #2c2c2c;
+    line-height: 32px;
+    font-style: italic; }
 
 .main-Blog__aside {
-  width: 25%; }
+  width: 320px; }
 
 .main-Blog__about {
   padding: 20px 20px 20px 20px;
@@ -513,7 +534,14 @@ img {
 
 .main-Blog__text--list {
   margin: 0;
-  padding: 0 20px; }
+  padding: 0;
+  list-style: none; }
+
+.main-Blog__text--item::before {
+  content: "\2022";
+  color: #f6a823;
+  font-size: 20px;
+  margin: 0 15px 0 0; }
 
 .main-Blog__section {
   width: 75%; }
@@ -523,7 +551,7 @@ img {
   padding: 50px;
   border-bottom: 5px solid #f6a823; }
   .main-Blog__article--content {
-    margin: 0 0 0 40px; }
+    margin: 0 0 0 20px; }
 
 .main-Blog__text {
   margin-top: 0; }
@@ -533,13 +561,23 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin: 0 0 20px 40px;
-  padding: 50px; }
+  padding: 30px; }
   .main-Blog__article--archive:nth-child(3) {
     border-bottom: 5px solid #f6a823; }
 
 .main-Blog__article--img {
   width: 80px;
   height: 80px; }
+
+.main-Blog__text--date {
+  font-size: 20px;
+  font-size: 2rem;
+  font-family: 'Roboto';
+  color: #2c2c2c;
+  line-height: 32px;
+  color: #285e64;
+  font-style: italic;
+  margin-top: 0; }
 
 .myForm {
   margin: 0 0 0 40px; }
@@ -585,7 +623,7 @@ button {
   margin-bottom: 100px; }
 
 .contact__Header {
-  background: url("../assets/blog-image-1.jpg");
+  background: url("../assets/contact-image-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -610,7 +648,8 @@ button {
     margin: -40px 120px; }
 
 .main-Contact-Container {
-  background: #f0efed; }
+  background: #f0efed;
+  padding-top: 100px; }
 
 .main-Contact__wrapper {
   display: -webkit-box;
@@ -618,7 +657,31 @@ button {
   display: flex; }
 
 .aside--contact {
-  width: 25%; }
+  width: 25%;
+  background: white;
+  height: 300px;
+  width: 350px;
+  padding: 40px; }
 
 .contact-Form {
   width: 75%; }
+
+.aside--socials .fab {
+  font-size: 25px;
+  color: #f6a823;
+  text-shadow: 1px 1px 5px #0000001a;
+  padding-right: 20px; }
+
+.aside--infoEmail, .aside--location {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: 'Roboto';
+  color: #2c2c2c;
+  line-height: 32px; }
+
+.aside--infoEmail {
+  font-weight: bold; }
+
+.aside--list {
+  list-style-type: none;
+  padding: 0; }

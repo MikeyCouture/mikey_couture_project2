@@ -14,6 +14,14 @@
         text-transform: uppercase;
         margin: 10px;
         color: $fontAccentColor;
+        transition: 0.5s;
+        &:hover{
+            color: $secondaryColor;
+        }
+        &--active{
+            color: $secondaryColor;
+            border-bottom: 1px solid $accentColor;
+        }
     }
     .navHeader__Sophie{
         @include fontSize(24);

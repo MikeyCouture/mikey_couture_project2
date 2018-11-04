@@ -19,9 +19,11 @@ $secondaryColor: #f0efed;
 $accentColor: #05afc1;
 $fontAccentColor: #2c2c2c;
 $subColor: #4f4f4f;
+$shadowColor: #a82706;
+$linkColor: #285e64;
 $mainFont: 'Roboto';
 $accentFont: 'Lora';
-$shadowColor: #a82706;
+
 
 
 @mixin fontSize($sizeValue){
