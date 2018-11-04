@@ -22,7 +22,6 @@
     }
 
 .find-Out-More__button{
-    // width: $width;
     color: $fontAccentColor;
     background: $accentColor;
     padding: 10px;
@@ -30,6 +29,10 @@
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+        background: lighten($accentColor, 10);
+    }
 }
 // ABOUT SECTION ENDS
 
@@ -98,12 +101,19 @@
 
 .mainNav__content{
     padding: 0 0 0 20px;
+    a{
+        text-decoration: none;
+    }
 }
 
 .mainNav__title{
     @include fontSize(32);
     line-height: none;
     margin: 0;
+    transition: 0.3s;
+    &:hover {
+        color: $accentColor;
+     }
 }
 
 .mainNav__text{

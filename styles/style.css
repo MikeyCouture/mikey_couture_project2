@@ -146,7 +146,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 .wrapper {
   max-width: 1280px;
@@ -185,9 +186,9 @@ img {
     text-transform: uppercase;
     margin: 10px;
     color: #2c2c2c;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s; }
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
     .navHeader__list .navHeader__item__link:hover {
       color: #f0efed; }
     .navHeader__list .navHeader__item__link--active {
@@ -288,7 +289,12 @@ img {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .find-Out-More__button:hover, .read-More-Button:hover, button:hover {
+    background: #06dcf3; }
 
 .blog--blogTop,
 .blog--blogBottom {
@@ -348,6 +354,8 @@ img {
 
 .mainNav__content {
   padding: 0 0 0 20px; }
+  .mainNav__content a {
+    text-decoration: none; }
 
 .mainNav__title {
   font-size: 32px;
@@ -359,7 +367,12 @@ img {
   letter-spacing: 1px;
   line-height: 29px;
   line-height: none;
-  margin: 0; }
+  margin: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .mainNav__title:hover {
+    color: #05afc1; }
 
 .mainNav__text {
   font-size: 20px;
