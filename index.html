@@ -25,6 +25,18 @@
             <h1 class="title">Sophie</h1>
             <img class="main-Header__img" src="./assets/home-image-1.jpg" alt="">
         </div>
+
+        <nav class="navHeader-Mobile">
+            <ul class="navHeader__list">
+                <li class="navHeader__item"><a class="navHeader__item__link" href="index.html">Home</a></li>
+                <li class="navHeader__item"><a class="navHeader__item__link" href="#aboutName">About</a></li>
+                <li class="navHeader__item"><a class="navHeader__item__link" href="blog.html">Blog</a></li>
+                <li class="navHeader__item"><a class="navHeader__item__link" href="contact.html">Contact</a></li>
+                <li class="navHeader__item"><a class="navHeader__item__link" href="#">Socials</a></li>
+            </ul>
+        </nav>
+        <a href="#"><i class="fas fa-bars"></i></a>
+
     </header>
 <!-- MAIN HEADER ENDS -->
 <!-- MAIN SECTION STARTS -->
@@ -144,6 +156,19 @@
             <p class="footer__item--content">Copyright © 2018 HackerYou</p>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+            $(".fa-bars").on("click", function () {
+                console.log("I'm clicked!");
+                $(".navHeader-Mobile").toggleClass("open");
+
+            });
+        });
+    </script>
 
     
 </body>

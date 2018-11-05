@@ -69,5 +69,48 @@
 
 
 
+// NAV MOBILE
+
+.navHeader-Mobile{
+    display: none;
+    position: absolute;
+    background: #4f4f4fcc;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50vh;
+    .navHeader__list{
+        flex-direction: column;
+        padding: 130px 0 0 0;
+        background: none;
+        .navHeader__item{
+            margin: 10px;  
+        }
+        .navHeader__item__link{
+        color: $primaryColor;
+        }    
+    }
+}
+
+.navHeader-Mobile.open{
+    display: block;
+}
+
+.fa-bars{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 2%;
+}
+ 
+
+
+
+
+
+
+
+
 
 

@@ -320,6 +320,69 @@
         display: none;
     }
 
+}
+
+@media (max-width: 550px){
+    .gallery__wrapper--container{
+        padding: 20px 0;
+    }
+}
+
+@media (max-width:480px){
+// HEADER NAV
+    .navHeader{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+    }
+}
+
+@media (min-width: 480px){
+    .navHeader-Mobile.open{
+    display: none;
+}
+}
+
+@media (max-width: 420px){
+
+
+// IMAGE BANNER
+    .image-Banner{
+        display: none;
+    }
+
+// MAIN NAV SECTION
+    .mainNav{
+        padding: 30px 0 30px 0;
+    }
+
+
+    .mainNav__wrapper--content{
+        padding-bottom: 30px;
+    }
+
+    .mainNav__text{
+        display: none;
+    }
+
+// JOURNEY SECTION
+    .journey{
+        padding-top: 0;
+    }
+    .journey__img{
+        box-shadow: none;
+        width: 100%;
+    }
+    .journey__content--title{
+        font-size: 3rem;
+    }
+
+// GALLERY
+
+    .gallery{
+        display: none;
+    }
 
 
 }
