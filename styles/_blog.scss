@@ -29,7 +29,6 @@
     }
 }
 
-
 .main-Blog-Wrapper{
     display: flex;
 }
@@ -56,14 +55,6 @@
         @include pText(20);
         font-style: italic;
     }
-    // a{
-    //     color: $linkColor;
-    //     font-weight: bold;
-    //     text-decoration: none;
-    //     &:hover {
-    //     color: lighten($linkColor, 10);
-    //     }
-    // }
 }
 
 .main-Blog__aside{
@@ -130,6 +121,121 @@
     color: $linkColor;
     font-style: italic;
     margin-top: 0;
+}
+
+
+@media (max-width: 905px){
+
+// MAIN BLOG ASIDE
+
+    .main-Blog__recent{
+        display: none;
+    }
+
+    .main-Blog-Wrapper{
+        flex-direction: column;
+        .main-Blog__aside{
+            width: 100%;
+            .main-Blog__about{
+                height: 500px;
+            }
+        }
+    }
+
+    .main-Blog__about img{
+        float: left;
+        width: 50%;
+        height: 400px;
+        object-fit: contain;
+    }
+
+    .main-Blog__title--about{
+        margin: 150px 0 20px 360px;
+    }
+
+    .main-Blog__text-about{
+        margin-left: 360px;
+    }
+
+
+// MAIN BLOG SECTION
+
+    .main-Blog__section{
+        width: 100%;
+        .main-Blog__article{
+            margin: 0 0 20px 0px;
+            .sophie-title--blog, .main-Blog__text--sophie-Date{
+                text-align: center;
+            }
+        }
+    }
+
+    .main-Blog__article--archive{
+        margin: 0 0 20px 0px;
+    }
+
+}
+
+@media (max-width: 768px){
+// MAIN BLOG ASIDE
+
+    .main-Blog__about img{
+        float: none;
+        width: 100%;
+    }
+
+    .main-Blog__title--about, 
+    .main-Blog__text-about{
+        margin: 30px 0 0 0;
+    }
+
+     .main-Blog-Wrapper{
+        .main-Blog__aside{
+            .main-Blog__about{
+                height: 590px;
+                text-align: center;
+                padding: 0 20px 0 20px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 550px){
+
+    .main-Blog__article{
+        padding: 30px;
+    }
+
+    .main-Blog__article--archive{
+        padding: 10px;
+    }
+
+    .main-Blog__article--archive:nth-child(2){
+        display: none;
+    }
+
+    .main-Blog__article--item{
+        display: none;
+    }
+
+    .main-Blog__title--about, 
+    .main-Blog__text-about{
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 400px){
+    .main-Blog__Header--title{
+        margin: -40px 90px;
+    }
+}
+
+@media (max-width: 320px){
+    .main-Blog__Header--title{
+        margin: -40px 50px;
+    }
 }
 
 

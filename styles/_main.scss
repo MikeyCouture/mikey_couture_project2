@@ -198,7 +198,7 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 50vh;
+        height: 600px;
     }
 
     .main-Header__img{
@@ -206,7 +206,7 @@
     }
 
     .header__wrapper{
-        padding-top: 310px;
+        padding-top: 520px;
     }
 
     .title{
@@ -326,6 +326,9 @@
     .gallery__wrapper--container{
         padding: 20px 0;
     }
+    .sophie-title{
+        font-size: 3rem;
+    }
 }
 
 @media (max-width:480px){
@@ -341,6 +344,8 @@
 @media (min-width: 480px){
     .navHeader-Mobile.open{
     display: none;
+    height: auto;
+    padding-top: 70px;
 }
 }
 

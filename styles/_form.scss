@@ -36,3 +36,32 @@ button{
     @extend .find-Out-More__button;
     margin-bottom: 100px;
 }
+
+
+@media (max-width: 1080px){
+    .myInput--name{
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 905px){
+    
+    .myForm{
+        margin: 0 0 0 0px;
+    }
+    
+    .myForm--topForm{
+        flex-direction: column;
+    }
+    .myInput{
+        &--name{
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        &--email{
+            width: 100%;
+        }
+    }
+
+}
