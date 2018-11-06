@@ -292,15 +292,16 @@
     .blog__img--blogTop{
         box-shadow: 100px 20px 40px #a82706, -145px 20px 40px #a82706;
         &:hover{
-            display: none;
+            box-shadow: 100px 20px 40px #a82706, -145px 20px 40px #a82706;
+            height: 330px;
         }
     }
 
     .blog__img--blogBottom{
         box-shadow: -100px 20px 40px #f6a823, 100px 20px 40px #f6a823;
-        transition: none;
         &:hover{
-            display: none;
+            box-shadow: -100px 20px 40px #f6a823, 100px 20px 40px #f6a823;
+            height: 330px;
         }
     }
 
