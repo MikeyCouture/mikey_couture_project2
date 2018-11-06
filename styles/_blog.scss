@@ -13,6 +13,10 @@
         @include fontSizeTwo(80);
         margin: -40px 120px;
     }
+    .title-Blog__sophie{
+        margin: 0 auto;
+        display: none;
+    }
 }
 
 .main-Blog-Container{
@@ -182,6 +186,7 @@
     .main-Blog__about img{
         float: none;
         width: 100%;
+        padding: 20px 20px 0 20px;
     }
 
     .main-Blog__title--about, 
@@ -224,6 +229,16 @@
         margin: 0;
     }
 
+}
+
+@media (max-width: 480px){
+
+    .main-Blog__Header{
+        .title-Blog__sophie{
+            display: block;
+            text-shadow: 1px 1px 1px black;
+        }
+    }
 }
 
 @media (max-width: 400px){

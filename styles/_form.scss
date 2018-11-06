@@ -17,6 +17,7 @@
      height: 50px;
      padding-left: 50px;
      font-style: italic;
+     border: none;
     }
     &--Comment{
         width: 100%;
@@ -24,6 +25,7 @@
         @include pText(18);
         padding: 0px 0px 220px 50px;
         margin: 10px 0;
+        border: none;
     }
 
 }
@@ -35,6 +37,7 @@
 button{
     @extend .find-Out-More__button;
     margin-bottom: 100px;
+    border: none;
 }
 
 
@@ -50,7 +53,7 @@ button{
     .myForm{
         margin: 0 0 0 0px;
     }
-    
+
     .myForm--topForm{
         flex-direction: column;
     }

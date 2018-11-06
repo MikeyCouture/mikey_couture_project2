@@ -475,7 +475,15 @@ img {
     padding: 0 20px; }
   .gallery__wrapper--container .gallery__image {
     display: block;
-    width: 100%; }
+    width: 100%;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .gallery__wrapper--container .gallery__image:hover {
+      -webkit-box-shadow: 2px 2px 5px black;
+      box-shadow: 2px 2px 5px black;
+      opacity: 0.8; }
 
 @media (max-width: 1080px) {
   .main-Header {
@@ -648,6 +656,9 @@ img {
     color: #2c2c2c;
     line-height: 92px;
     margin: -40px 120px; }
+  .main-Blog__Header .title-Blog__sophie {
+    margin: 0 auto;
+    display: none; }
 
 .main-Blog-Container {
   background: #f0efed;
@@ -791,7 +802,8 @@ img {
 @media (max-width: 768px) {
   .main-Blog__about img {
     float: none;
-    width: 100%; }
+    width: 100%;
+    padding: 20px 20px 0 20px; }
   .main-Blog__title--about,
   .main-Blog__text-about {
     margin: 30px 0 0 0; }
@@ -812,6 +824,11 @@ img {
   .main-Blog__title--about,
   .main-Blog__text-about {
     margin: 0; } }
+
+@media (max-width: 480px) {
+  .main-Blog__Header .title-Blog__sophie {
+    display: block;
+    text-shadow: 1px 1px 1px black; } }
 
 @media (max-width: 400px) {
   .main-Blog__Header--title {
@@ -845,7 +862,8 @@ img {
   width: 50%;
   height: 50px;
   padding-left: 50px;
-  font-style: italic; }
+  font-style: italic;
+  border: none; }
 
 .myInput--Comment {
   width: 100%;
@@ -856,13 +874,15 @@ img {
   color: #2c2c2c;
   line-height: 32px;
   padding: 0px 0px 220px 50px;
-  margin: 10px 0; }
+  margin: 10px 0;
+  border: none; }
 
 .myInput--name {
   margin-right: 10px; }
 
 button {
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  border: none; }
 
 @media (max-width: 1080px) {
   .myInput--name {
@@ -945,3 +965,32 @@ button {
 .aside--list {
   list-style-type: none;
   padding: 0; }
+
+@media (max-width: 905px) {
+  .main-Contact__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .aside--contact {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto; }
+  .contact-Form {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px; } }
+
+@media (max-width: 575px) {
+  .aside--contact {
+    width: 100%;
+    padding: 20px; } }
+
+@media (max-width: 468px) {
+  .contact__Header--title {
+    margin: -40px 80px; } }
+
+@media (max-width: 400px) {
+  .contact__Header--title {
+    margin: -40px 15%;
+    font-size: 6rem; } }

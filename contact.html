@@ -90,7 +90,18 @@
         </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+            $(".fa-bars").on("click", function () {
+                console.log("I'm clicked!");
+                $(".navHeader-Mobile").toggleClass("open");
 
+            });
+        });
+    </script>
     
 </body>
 </html>
