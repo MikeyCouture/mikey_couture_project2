@@ -55,6 +55,11 @@
     background-position: center;
     height: 330px;
     background-repeat: no-repeat;
+    transition: all 0.8s;
+    &:hover{
+        height: 340px;
+        box-shadow: 20px 20px $primaryColor, -20px 20px $primaryColor;
+    }
 }
 
 .blog__img--blogBottom{
@@ -63,6 +68,11 @@
     background-position: center;
     height: 330px;
     background-repeat: no-repeat;
+    transition: all 0.8s;
+    &:hover{
+        height: 340px;
+        box-shadow: -20px 20px $shadowColor, 20px 20px $shadowColor;
+    }
 
 }
 
@@ -77,6 +87,28 @@
 
 .read-More-Button{
     @extend .find-Out-More__button;
+}
+
+.blog__img--blogTop,
+.blog__img--blogBottom{
+    position: relative;
+    bottom: 30px;
+    box-shadow: 20px 20px $shadowColor, -145px 20px $shadowColor;
+}
+
+.blog__img--blogBottom{
+    top: 30px;
+    box-shadow: 20px 20px $primaryColor, 145px 20px $primaryColor;
+}
+
+.blog__content--blogTop{
+    padding: 50px 0 0 70px;
+}
+
+.blog__content--blogBottom{
+    padding: 0px 60px 0 0px;
+    text-align: end;
+
 }
 // BLOG SECTION ENDS
 
@@ -124,29 +156,6 @@
 }
 
 // MAIN NAV ENDS
-
-.blog__img--blogTop,
-.blog__img--blogBottom{
-    position: relative;
-    bottom: 30px;
-    box-shadow: 20px 20px $shadowColor, -145px 20px $shadowColor;
-}
-
-.blog__img--blogBottom{
-    top: 30px;
-    box-shadow: 20px 20px $primaryColor, 145px 20px $primaryColor;
-}
-
-.blog__content--blogTop{
-    padding: 50px 0 0 70px;
-}
-
-.blog__content--blogBottom{
-    padding: 0px 60px 0 0px;
-    text-align: end;
-
-}
-// IMAGE BANNER ENDS
 
 // JOURNEY SECTION
 .journey{
@@ -282,10 +291,17 @@
 
     .blog__img--blogTop{
         box-shadow: 100px 20px 40px #a82706, -145px 20px 40px #a82706;
+        &:hover{
+            display: none;
+        }
     }
 
     .blog__img--blogBottom{
         box-shadow: -100px 20px 40px #f6a823, 100px 20px 40px #f6a823;
+        transition: none;
+        &:hover{
+            display: none;
+        }
     }
 
     .blog__content{
