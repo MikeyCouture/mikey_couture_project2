@@ -130,6 +130,9 @@
 
 @media (max-width: 905px){
 
+// MAIN BLOG HEADER
+
+
 // MAIN BLOG ASIDE
 
     .main-Blog__recent{
@@ -233,7 +236,12 @@
 
 @media (max-width: 480px){
 
+    .main-Blog-Wrapper{
+        width: 90%;
+    }
+
     .main-Blog__Header{
+        justify-content: center;
         .title-Blog__sophie{
             display: block;
             text-shadow: 1px 1px 1px black;

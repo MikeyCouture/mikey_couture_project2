@@ -30,16 +30,11 @@
 }
 
 
-// NAV MOBILE
-// .navHeader-Mobile.open{
-//     height: auto;
-//     padding-top: 70px;
-// }
-
 .main-Header{
     background: $primaryColor;
     margin: 0 auto;
     height: 600px;
+    background-image: linear-gradient($primaryColor, $secondaryColor);
 }
 
 .header__wrapper{

@@ -60,12 +60,27 @@
         padding: 0;    
 }
 
+@media (max-width: 1080px){
+    .myForm--topForm{
+        flex-direction: column;
+        .myInput{
+            &--name, &--email{
+                width: 100%;
+            }
+        }
+    }
+    .myInput--name{
+        margin-bottom: 15px;
+    }
+}
+
 
 
 @media (max-width: 905px){
 
     .main-Contact__wrapper{
         flex-direction: column;
+        width: 90%;
     }
 
     .aside--contact{
@@ -81,6 +96,15 @@
     }
 }
 
+@media (max-width: 845px){
+    .contact__Header{
+        justify-content: center;
+        .contact__Header--title{
+            margin: -40px auto;
+        }
+    }
+}
+
 @media (max-width: 575px){
 
     .aside--contact{
@@ -89,10 +113,11 @@
     }
 }
 
-@media (max-width: 468px){
-
-    .contact__Header--title{
-        margin: -40px 80px;
+@media (max-width: 605px){
+    .contact__Header{
+        .contact__Header--title{
+            margin: -40px 120px;
+        }
     }
 }
 

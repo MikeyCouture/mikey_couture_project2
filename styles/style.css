@@ -208,7 +208,11 @@ img {
 .main-Header {
   background: #f6a823;
   margin: 0 auto;
-  height: 600px; }
+  height: 600px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f6a823), to(#f0efed));
+  background-image: -webkit-linear-gradient(#f6a823, #f0efed);
+  background-image: -o-linear-gradient(#f6a823, #f0efed);
+  background-image: linear-gradient(#f6a823, #f0efed); }
 
 .header__wrapper {
   display: -webkit-box;
@@ -856,9 +860,15 @@ img {
     margin: 0; } }
 
 @media (max-width: 480px) {
-  .main-Blog__Header .title-Blog__sophie {
-    display: block;
-    text-shadow: 1px 1px 1px black; } }
+  .main-Blog-Wrapper {
+    width: 90%; }
+  .main-Blog__Header {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .main-Blog__Header .title-Blog__sophie {
+      display: block;
+      text-shadow: 1px 1px 1px black; } }
 
 @media (max-width: 400px) {
   .main-Blog__Header--title {
@@ -996,12 +1006,24 @@ button {
   list-style-type: none;
   padding: 0; }
 
+@media (max-width: 1080px) {
+  .myForm--topForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .myForm--topForm .myInput--name, .myForm--topForm .myInput--email {
+      width: 100%; }
+  .myInput--name {
+    margin-bottom: 15px; } }
+
 @media (max-width: 905px) {
   .main-Contact__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 90%; }
   .aside--contact {
     text-align: center;
     width: 60%;
@@ -1011,14 +1033,22 @@ button {
     margin: 0 auto;
     padding-top: 50px; } }
 
+@media (max-width: 845px) {
+  .contact__Header {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .contact__Header .contact__Header--title {
+      margin: -40px auto; } }
+
 @media (max-width: 575px) {
   .aside--contact {
     width: 100%;
     padding: 20px; } }
 
-@media (max-width: 468px) {
-  .contact__Header--title {
-    margin: -40px 80px; } }
+@media (max-width: 605px) {
+  .contact__Header .contact__Header--title {
+    margin: -40px 120px; } }
 
 @media (max-width: 400px) {
   .contact__Header--title {
