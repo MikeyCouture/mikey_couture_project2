@@ -79,7 +79,8 @@
 // NAV MOBILE
 
 .navHeader-Mobile{
-    display: none;
+    // display: none;
+    opacity: 0;
     position: absolute;
     background: #4f4f4fcc;
     top: 0;
@@ -88,6 +89,7 @@
     right: 0;
     height: auto;
     padding-top: 70px;
+    transition: all 2s;
     .navHeader__list{
         flex-direction: column;
         padding: 130px 0 0 0;
@@ -96,14 +98,21 @@
             margin: 10px;  
         }
         .navHeader__item__link{
-        color: $primaryColor;
-        text-shadow: 2px 2px $fontAccentColor;
+            display: none;
+            color: $primaryColor;
+            text-shadow: 2px 2px $fontAccentColor;
         }    
     }
 }
 
 .navHeader-Mobile.open{
-    display: block;
+    opacity: 1;
+    .navHeader__list{
+        .navHeader__item__link{
+            display: block;
+        }
+    }
+    // display: block;
 }
 
 .fa-bars{
