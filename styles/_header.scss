@@ -79,8 +79,7 @@
 // NAV MOBILE
 
 .navHeader-Mobile{
-    // display: none;
-    opacity: 0;
+    display: none;
     position: absolute;
     background: #4f4f4fcc;
     top: 0;
@@ -98,7 +97,6 @@
             margin: 10px;  
         }
         .navHeader__item__link{
-            display: none;
             color: $primaryColor;
             text-shadow: 2px 2px $fontAccentColor;
         }    
@@ -106,13 +104,7 @@
 }
 
 .navHeader-Mobile.open{
-    opacity: 1;
-    .navHeader__list{
-        .navHeader__item__link{
-            display: block;
-        }
-    }
-    // display: block;
+    display: block;
 }
 
 .fa-bars{

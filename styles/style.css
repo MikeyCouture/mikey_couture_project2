@@ -261,7 +261,7 @@ img {
     transform: rotate(360deg); }
 
 .navHeader-Mobile {
-  opacity: 0;
+  display: none;
   position: absolute;
   background: #4f4f4fcc;
   top: 0;
@@ -283,14 +283,11 @@ img {
     .navHeader-Mobile .navHeader__list .navHeader__item {
       margin: 10px; }
     .navHeader-Mobile .navHeader__list .navHeader__item__link {
-      display: none;
       color: #f6a823;
       text-shadow: 2px 2px #2c2c2c; }
 
 .navHeader-Mobile.open {
-  opacity: 1; }
-  .navHeader-Mobile.open .navHeader__list .navHeader__item__link {
-    display: block; }
+  display: block; }
 
 .fa-bars {
   display: none;
